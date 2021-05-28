@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Messenger - Custom Mention</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body" style="width: 300px" >
+    <div class="container py-3">
+      <form id="form" autocomplete="off">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Write the message here</label
+          >
+          <input
+            class="form-control"
+            id="message"
+            aria-describedby="messageHelp"
+            placeholder="@everyone"
+          />
+          <div id="messageHelp" class="form-text">This will be used to mention @everyone</div>
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary mr-3">Submit</button>
+        <small class="text-muted" id="sending">Sending Message...</small>
+        <small class="text-danger" id="failed">Sending Failed!</small>
+        <small class="text-success" id="success">Message Sent!</small>
+      </form>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "Messenger Custom Mention",
+  "version": "1.0",
+  "description": "Messenger Custom Mention",
+  "permissions": [
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus",
+    "https://*.facebook.com/*",
+    "https://*.messenger.com/*"
+  ],
+  "icons": { "16": "logo.png", "48": "logo.png", "128": "logo.png" },
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html"
+  },
+  "manifest_version": 2
+}
